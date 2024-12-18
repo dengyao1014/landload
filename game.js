@@ -49,4 +49,4 @@ upgradeButtons.forEach(button => {
             updateUpgradeButtons();
         }
     });
-}); 
+});
