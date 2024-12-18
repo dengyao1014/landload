@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill Guy Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SVG Sprites -->
+    <div class="image-preload">
+        <svg style="display: none;">
+            <symbol id="icon-hot" viewBox="0 0 512 512">
+                <path d="M447.264 304.789L446.899 299.779C441.034 223.428 405.483 175.564 374.12 133.347C345.079 94.2544 319.997 60.4956 319.997 10.6845C319.997 6.68463 317.757 3.02877 314.206 1.19483C310.643 -0.649097 306.362 -0.347109 303.123 2.0078C256.021 35.7146 216.72 92.5254 202.992 146.731C193.461 184.47 192.2 226.895 192.023 254.915C148.525 245.624 138.671 180.553 138.567 179.845C138.326 178.183 137.699 176.601 136.734 175.225C135.77 173.85 134.496 172.721 133.015 171.928C129.984 170.346 126.422 170.231 123.349 171.751C121.068 172.855 67.3607 200.146 64.2358 309.121C64.0168 312.746 64.0068 316.371 64.0068 320.006C64.0068 425.867 150.139 511.999 256 511.999C361.861 511.999 447.993 425.867 447.993 320.006C447.993 314.694 447.629 309.736 447.264 304.789Z"/>
+            </symbol>
+        </svg>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="logo.png" 
+                         alt="Chill Guy Clicker" 
+                         width="111" 
+                         height="75">
+                </a>
+            </div>
+            <div class="nav-buttons">
+                <a href="#about" class="nav-btn">About</a>
+                <a href="#features" class="nav-btn">Features</a>
+                <a href="#how-to-play" class="nav-btn">How to Play</a>
+                <a href="#legend" class="nav-btn">Legend</a>
+                <a href="#faq" class="nav-btn">FAQ</a>
+                <a href="#gameplay" class="nav-btn">Gameplay</a>
+                <a href="/new-games" class="nav-btn">
+                    <svg class="icon--svg" width="32" height="32">
+                        <use xlink:href="#icon-hot"></use>
+                    </svg>
+                    New Games
+                </a>
+                <a href="/hot-games" class="nav-btn">
+                    <svg class="icon--svg" width="32" height="32">
+                        <use xlink:href="#icon-hot"></use>
+                    </svg>
+                    Hot Games
+                </a>
+                <a href="#search" class="nav-btn search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="game game__play">
+        <div class="container">
+            <div class="game__play--grid">
+                <div class="iframe-box">
+                    <div class="inner-frame-box">
+                        <iframe 
+                            id="iframehtml5" 
+                            width="100%" 
+                            height="591"
+                            src="https://chillguyclicker.io/chill-guy-clicker.embed"
+                            frameborder="0" 
+                            allowfullscreen
+                        ></iframe>
+                        <div class="header-game">
+                            <div class="box-header">
+                                <div class="game-full-rate">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="score">4.6</span>
+                                </div>
+                                <div class="header-game-extend">
+                                    <span class="comment-btn" title="Comment">
+                                        <svg viewBox="0 0 512 512">
+                                            <path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="expand-btn" title="Theater mode">
+                                        <svg viewBox="0 0 8 8">
+                                            <path d="M0 0v4l1.5-1.5 1.5 1.5 1-1-1.5-1.5 1.5-1.5h-4zm5 4l-1 1 1.5 1.5-1.5 1.5h4v-4l-1.5 1.5-1.5-1.5z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="games__content">
+        <div class="container">
+            <div class="heading__content">
+                <h2 class="title-karmatic">Hot Games</h2>
+            </div>
+            <div class="grid__game">
+                <!-- Example game thumbnails -->
+                <div class="grid__game--item-element">
+                    <a class="grid__game--item" href="/click-on-the-chilly-guy">
+                        <img class="d-block" 
+                             width="220" 
+                             height="175" 
+                             src="https://via.placeholder.com/220x175?text=Chilly+Guy" 
+                             alt="Click on the Chilly guy!" />
+                        <div class="grid__game--item-title">
+                            <span class="text-overflow">Click on the Chilly guy!</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more game thumbnails as needed -->
+                <div class="grid__game--item-element">
+                    <a class="grid__game--item" href="/block-blast">
+                        <img class="d-block" 
+                             width="220" 
+                             height="175" 
+                             src="https://via.placeholder.com/220x175?text=Block+Blast" 
+                             alt="Block Blast" />
+                        <div class="grid__game--item-title">
+                            <span class="text-overflow">Block Blast</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid__game--item-element">
+                    <a class="grid__game--item" href="/chill-guy-unification">
+                        <img class="d-block" 
+                             width="220" 
+                             height="175" 
+                             src="https://via.placeholder.com/220x175?text=Unification" 
+                             alt="Chill Guy: Unification!" />
+                        <div class="grid__game--item-title">
+                            <span class="text-overflow">Chill Guy: Unification!</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <h3>What is Chill Guy?</h3>
+                    <p>Chill Guy is a meme featuring a cartoon dog character with a distinctively calm appearance, wearing a gray sweater, blue jeans, and red sneakers. What started as a simple Twitter post has evolved into an internet phenomenon that captures the essence of staying relaxed in any situation.</p>
+                    
+                    <h3>The Origin Story</h3>
+                    <p>Originally posted by artist Phillip Banks on Twitter (now X.com) on October 4, 2023, with the description: "My new character. His whole deal is he's a chill guy that lowkey doesn't give a f---." The character quickly gained popularity, especially on platforms like TikTok, where it went viral and inspired countless memes, edits, and even its own cryptocurrency.</p>
+                </div>
+                
+                <div class="about-game">
+                    <h3>About the Game</h3>
+                    <p>Chill Guy Clicker transforms this beloved meme into an engaging idle clicking game. As players, you'll:</p>
+                    <ul>
+                        <li>Click to earn diamonds and progress through the game</li>
+                        <li>Unlock various upgrades and achievements</li>
+                        <li>Experience the ultimate goal of becoming a true chill guy</li>
+                        <li>Enjoy a relaxing gameplay experience with soothing visuals and music</li>
+                    </ul>
+                </div>
+                
+                <div class="about-impact">
+                    <h3>Cultural Impact</h3>
+                    <p>The Chill Guy meme has resonated with millions worldwide because it represents a simple yet powerful message: staying calm and relaxed in our fast-paced world. The phrase "just a chill guy" has become a way to express a laid-back attitude in contrast to life's chaos.</p>
+                    
+                    <p>On TikTok alone, the hashtag #ChillGuy has garnered hundreds of thousands of posts, with users creating their own interpretations and scenarios featuring the character. The meme's success lies in its universal appeal and adaptability, making it perfect for various situations and contexts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <ul class="features-list">
+                <li>Simple and addictive clicking gameplay</li>
+                <li>Multiple upgrades and achievements</li>
+                <li>Relaxing atmosphere with chill music</li>
+                <li>Auto-click features for idle progression</li>
+                <li>Regular updates and new content</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="how-to-play" class="content-section">
+        <div class="container">
+            <h2 class="section-title">How to Play</h2>
+            <div class="how-to-play-content">
+                <h3>Basic Controls</h3>
+                <ul>
+                    <li>Click on Chill Guy to earn points</li>
+                    <li>Use points to buy upgrades</li>
+                    <li>Unlock achievements as you progress</li>
+                </ul>
+                <h3>Tips</h3>
+                <ul>
+                    <li>Start with basic upgrades first</li>
+                    <li>Save up for auto-clickers</li>
+                    <li>Check achievements for bonus rewards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="legend" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Legend</h2>
+            <div class="legend-content">
+                <p>The legend of Chill Guy began as a simple meme that took the internet by storm. Created by artist Phillip Banks, this laid-back dog character represents the ultimate state of relaxation and peace.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="content-section">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>What is Chill Guy Clicker?</h3>
+                    <p>A clicking game based on the popular Chill Guy meme where you click to earn points and upgrades.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is it free to play?</h3>
+                    <p>Yes, Chill Guy Clicker is completely free to play!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Does my progress save?</h3>
+                    <p>Yes, your progress is automatically saved in your browser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gameplay" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Gameplay</h2>
+            <div class="video-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Hl2DVLxB7R0?si=TxKFURq8edpY3PiC" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="foot-row">
+                <div class="inner-row-footer">
+                    <a href="/about-us">About Us</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/contact-us">Contact Us</a>
+                    <a href="/term-of-use">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
